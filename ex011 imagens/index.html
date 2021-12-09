@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h1> Imagens Dinâmicas</h1>
+    <p> são imagens que se adaptam a diferentes tamanhos de tela</p>
+    <p> Usamos a tag picture para adicionar diferentes sources e a imagens exibida será a que se adpta melhor a tela, lembrando que as imagens PRECISAM ser colocadas no cpdigo da MENOR a MAIOR.  </p>
+    
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="img/fotop.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/fotom.png" type="image/png">
+        <img src="img/fotog.png" alt=" foto grande">
+    
+    </picture>
+
+    <h1> Reproduzindo arquivos de audio</h1>
+    <p> Importante lembrar que esses arquivos podem ser pesados. <br> A maneira mais facil é assim, porem pode nao reproduzir em todo navegador</p>
+
+   <p> Parametros</p>
+    <Ul>
+        <li> autoplay, the audio will play as soon as the page is loaded, but not compatible with all navegadores</li>
+        <li 
+        <li> controls, o player aparece e o usuario pode sar play, pausar e etc</li>
+        
+    </Ul>
+
+    <audio src="midia/in-the-past.mp3" controls ></audio>
+
+
+    <p> para ra fazer com que o audio toque em todos ou mais navegadores, podemos dar <stong>mutiple soucers</stong>, similarly as how it's dome with images. Para isso teremos o mesmo audio salvo em MP3, OGG, Wav. ( aqui não tenho o audio salvo nos formatos, é apenas um codigo ficticio para exemplificar. <en> lembre que a ordem é importa, a primeira source sera a primeria a tocar e consecutivamente. </en></p>
+
+    <p>Parametro Preload = define quando o site vai carrega, em AUTO considera que o site vai estar carregado quando o Audio completo estvier carregado, se dor um auio pesado ou internat ruim pode semorar muito. METADATA, carrega apenas informacoes basicas tipo nome do arquivos e duracao, e NONE nada do audio e carregado.  </p> 
+
+    <p> Parametro loop indica que o audio vai tomar em loop  </p>
+
+    <audio preload= "metadata" controls>
+        <source src="midia/in-the-past.mp3" type= "audio/mpeg">
+        <source src= "midia/in-the-past.ogg" type= "audio/ogg">
+        <source src= "midia/in-the-past.wav" type= "audio/wav">
+        <source media="(min-width: )" srcset="" sizes="">
+        <p> UNFORTUNATLY YOUR BROWSER CAN'T REPRODUCE AUDIO,  <a href="midia/in-the-past.mp3" type="audio/mpeg" download="in-the-past.mp3">  CLICK HERE TO DOWNLOAD </a> </p>
+       
+    </audio>
+
+    <a href="pago002.html" rel= "next "> next </a>
+   
+   
+</body>
+</html>

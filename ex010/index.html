@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancoras</title>
+</head>
+<body>
+
+    <h1> Links </h1>
+
+    <h2> links externos </h2>
+
+    <p> - Usar Hreflang  para indicar a lingua em que site do link esta <br>   - Usar rel= 'external ' para indicar que é um link externo  </p>
+    <a href="https://en.wikipedia.org/wiki/Frida_Kahlo" hreflang="en" target= "_blank" rel= "external"> Frida Kahlo </a>  
+
+    <h2> Links internos </h2>
+    <p>usado Para levar o usuario a outras paginas dentro do próprio site, por isso será conectado com outras paginas ou pastar dentros do vscode, exemplo conectando a outra pagina:</p> 
+
+    
+    <p> to go to <a href="pag002.html" rel="next">page 2</a> </p>
+
+    <p> exemplo conectando a outra pasta </p>
+    <p> ir para <a href="noticias/pag003.html" rel= next >noticias</a> </p>
+
+
+    <h3> tipos de "rel" e por que</h3>
+
+    <ul>
+        <li> rel='next', indica que é um link para outra parte do documento atual </li>
+        <li>rel='prev' indica que o link vai para a parte anterior </li>
+        <li> rel=author indica que é link para o autor do artigo atual</li>
+        <li> rel=external indica que é para outro site </li>
+        <li> rel="nofollow" indicar que é para um site não endossado, como um link pago ou um site que não validamos </li>
+    </ul>
+
+    <h3> tipos de Target=</h3>
+    <ul>
+        <li> _blank, opens up on a new tab  <a href="http://google.com"  target='_blank' rel="external" >Google </a> </li>
+        <li>_ self or no target at all, opens up on the same tab <a href="http://google.com"  target='_self' rel="external">Google </a> </li>
+        <li>_top   breaks outside of all the frames it is nested in and opens the link as top document in the browser window <a href="http://google.com"  target='_top' rel="external">Google </a></li> 
+        <li>_parent    open the in the next level up of a frame if they were nested to inside one another <a href="http://google.com"  target='_parent' rel="external">Google </a></li> 
+
+    </ul>
+
+    <h2> Link para Download </h2>
+    <p> muito parecido, porém é necessário criar uma pasta e adicionar o arquivo a ser baixado, recomendado Zipar o conteúdo para ficar menor e mais level<br> - O comportamento depende do broswer, exemplo, artigos em pdf geralmente sao abertos em nova aba no Chrome pois o Chrome pode exibir esse tipo de arquivo, porem usando o mesmo link com outro arquivo tipo mp3, zip, etc seria baixads.</p>
+
+    <p> para sabe o type correto acessar  o <a href=" https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" type="external ">site da Iana</a></p>
+
+    <a href="livro/Mecanismos.pdf" download= "Mecanismos.pdf" type="application/pdf" target='_blank'> Baixe livro em pdf </a>
+
+    <a href="fav/favicon_io.zip" download="favicon_io.zip" type=application/zip>FavIcon</a>  
+
+    <a href="img/adaCrianca.png" download="iadaCrianca.png" type="application/png" > Foto de Ada kid</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+        @font-face {
+            font-family: 'augusto';
+            src: url(fonts/August.script.otf) format('opentype') ;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 12px;
+            margin: auto;
+            width: 600px;
+            background-color: rgb(231, 160, 231);
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        h1{ 
+            font-family:'Righteous', cursive;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        h2{
+            font: italic, bold, 1.2em, "new courier";
+            
+        }
+
+        h3{
+            font-family: "augusto";
+            font-size: 5em;
+            font-weight: normal;
+
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            box-shadow: 10px 10px 5px  rgb(70, 52, 70);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> Fontes </h1>
+        <h2> font-family</h2>
+        <ul>
+            <li>Usa-se no máximo 3 ou 4 fontes </li>
+            <li> serif, letras com pernhinha geralmente usadas para material impresso ou titles, pouco recomendada para parafrafos </li>
+            <li> sans-serif, geralmente se reconda usar fontes não serifadas em paragrafos em sites</li>
+            <li> Se recondada feed várias fontes no css, isso é para dar opçoes para o computador, isso é, ele vai tentar todas as opções até ter uma disponivel (nem todos os navegadores tem todas as mesmas fontes) por isso recomenda-se terminar com serif ou sans-serif </li>
+        </ul>
+        <h2> font-size</h2>
+        <p> medidas absolutas: cm, in, pt, mm, px, pc.</p>
+        <p> medidas Relativas: EM, EX, rem, %, vh, VW </p>
+        <p> O W3c recomenda usas PX e EM only! 1 em é geralmente o mesmo que 16px </p>
+        <h2> Font-weight</h2>
+        <p> Lighter, normal, bold or Bolder ou qualquer variação de cem entre 100 e 900. Nem todas as fontes possuem todos os pesos mas se colocado em numeroso  navegador vai escolher o mais próximo.</p>
+        <h2> font-style </h2>
+        <p> Italic or normal </p>
+        <h2> Shorthand para font </h2>
+        <p> usa-se o seletor font, e em seguida nesta ordem os valores de style, weight,size, family. NESTA ORDEM. Vide h2 </p>
+
+
+        <h1> Google Fonts </h1>
+        <p> Encontrar a fonte desejada no googel fontes, ver família selecionada, copy and paste on css. Vide h1.  ---- importante: o @ precisa estar fora de seletores e bem no topo</p>
+
+
+        <h3> Fontes Externas </h3>
+
+        <p> Usadas para fontes especificas que não estão no Google Fontes, sao arquivos baixados nos formatos Otf ou TTF, podem er baixados no DaFont ou qualquer outro site . </p>
+        <p> tipos  de format("") </p>
+        <ul>
+            <li> format("opentype"); (otf) </li>
+            <li> format("truetype")(ttf) ;</li>
+            <li> format("embedded-opentype");</li>
+            <li> format("truetype-att");</li>
+            <li> format("svg");</li>
+
+        </ul>
+        <p> importante utilizar mais de um formato (geralmente OTF and TTF sao suficientes) para garantir que seja compativeis com todos os navegadores, pra isso basta adicionar um virgula e nova URl e Src </p>         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla culpa temporibus, pariatur cum ad delectus quod sunt ut accusantium earum ipsum doloribus amet cumque facere voluptatibus, quisquam magni qui excepturi?</p>
+
+        <h1> Identificando Fontes</h1>
+        <p>  Fonts Ninja = Plug in do Chrome que possibilita descobrir as fontes, tamanhos, pesos e cores das fontes usadas em sites alheitos, e tambem possibilita provar as fontes. <br> 
+       WhatFontiIs, Font Finder e font Squirrel= Detectam a fonte em IMAGENS, depois é só procurar no google fontes ou dafonts</p>
+    </main>
+
+</body>
+</html>

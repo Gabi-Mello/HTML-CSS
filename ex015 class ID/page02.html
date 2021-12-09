@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e elementos</title>
+     <style> 
+         body{ 
+            width: 60%;
+            margin: auto;
+            background-color:#DBDBDB ;
+            text-align: center;
+            }
+
+            main{
+            background-color: white;
+         }
+
+            #d1, #d2, #d3{
+                display: inline-block ;
+                width: 200px;
+                height: 200px;
+                background-color: lightgrey;
+                border: 2px solid black;
+            }
+
+            #d1:hover, #d2:hover , #d3:hover{
+                background-color: yellow;
+            }            
+
+
+            div > p{
+                display: none;
+            }
+        
+            div:hover> p {
+                display: inline-block;
+                background-color: red;
+                color: white;
+
+            }
+    
+            div:hover{
+                color: red;
+            }
+
+            
+            a{
+                color: rgb(226, 43, 180);  
+                display: inline-block;
+            }
+
+            a:visited{
+                color: pink;
+            }
+
+
+            a:hover{
+                color: brown;
+            }
+
+            a:active{
+                color: yellow;
+            }
+        
+            li::before{
+            content: "[link]";
+            }
+
+            li::after{
+                content: ":)";
+            }
+            
+     </style>
+
+</head> 
+</head>
+
+<body>
+    <main>
+        <h1> Pseudo-classes</h1>
+        <p> Pseudo-classes nos permitem mudar o layout apenas quando certas ações são executadas</p>
+        <p class=" exemplo"> exemplo 1: aqui as cores vao mudar apenas quando o mouse passar em cima</p>
+
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3"> 3</div>
+
+
+        <p class=" exemplo"> exemplo 2: </p> 
+
+        <p> passe o mouse sobre o text abaixo </p>
+        <div> passe o mouse aqui <br>
+            <p> texto escondido </p> 
+        </div>
+        <p> fim do exemplo</p> 
+
+        <p>exemplo</p>
+        <ul>
+            <li> <a href="https://www.google.com/">Google</a></li>
+            <li> <a href="https://www.instagram.com/gabim.mello/">Instagram</a></li>
+            <li> <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+            <li> <a href="yahoo.com">yahoo</a></li>
+        </ul>
+
+        <p>QUANDO USANDO PSEUDO CLASSES COM LINKS:é preciso seguir a ordem Visited, hover, active senão as configurações não irão funcionar.</p> 
+        <h2> Outras Pseudo-classes</h2> 
+        <p>:before :checked :visited :active :empty :focus</p> 
+            
+        <h1> Pseudo-elements</h1>
+        <p> É uma palavra chave adicionada depois de dois pontos que formate um pedaco da html</p>
+        <p> exmeplo</p>
+
+        <p>exemplo</p> 
+
+        <ul>
+            <li> <a href="https://www.google.com/">Google</a></li>
+            <li> <a href="https://www.instagram.com/gabim.mello/">Instagram</a></li>
+            <li> <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+            <li> <a href="yahoo.com">yahoo</a></li>
+        </ul>
+
+        
+
+        <h2>Outros Pseudo elementos </h2> 
+        <p>::before ::after ::fisrt-letter ::last-line</p> 
+        <p> e podemos addicionar conteudo usando content:""; na css </p>
+    </main>
+
+</body>
+</html>
