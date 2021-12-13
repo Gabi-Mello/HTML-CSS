@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+    --font-title:  'Passion One', cursive;
+    --font-body:'Sriracha', cursive; 
+}
+
+*{ 
+    margin: 0;
+
+}
+header{
+    padding-top: 50px;
+    background-color: black;
+    font:200 3em var(--font-title);
+    color: white;
+    text-align: center;
+}
+
+
+header p{
+    font:  00.5em arial;
+}
+
+header a{
+   text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover{
+    color: blue;
+}
+main{
+    max-width: 600px;
+    font: normal bold 2em var(--font-body);
+    color: black; 
+}
+p {
+    padding: 20px;
+    margin: 20px;
+}
+
+#segundo {
+    width: 99vw;
+    min-height: 700px;
+    background: rgb(240, 240, 99) url(imagens/background001.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed ; 
+    position: relative;  
+}
+
+#segundo > p {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    max-width: 450px ;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
+    text-shadow: 3px 3px 2px black;
+    top: 50%;
+    transform: translate(0, -50%);
+   
+}
+
+#quinto {
+    width: 99vw;
+    min-height: 700px;
+    background: rgb(240, 240, 99) url(imagens/background002.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed ; 
+    position: relative;  
+    box-shadow: 0 -5px -5px rgba(0, 0, 0, 0.473);
+}
+
+#quinto> p {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    max-width: 450px ;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
+    text-shadow: 3px 3px 2px black;
+    top: 50%;
+    transform: translate(0, -50%);
+
+
+}
