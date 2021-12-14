@@ -23,9 +23,10 @@ html, body{
 header{
     padding-top: 50px;
     background-color: black;
-    font:200 3em var(--font-title);
+    font:200 4vw var(--font-title);
     color: white;
-    text-align: center;
+    text-align: center; 
+    width: 100vw;
 }
 
 header h1{
@@ -48,56 +49,45 @@ a:hover{
 }
 
 main{
-    max-width: 600px;
     font: normal bold 2em var(--font-body);
     color: black; 
 }
 
 section{
-    padding: 15vh;
-    margin-top: 20px;
+    margin-top: 5px;
+    padding: 10vh;
+    padding-left: 30px;
     line-height: 2em;
+    min-height: 500px;
+    
 }
 
-#segundo {
-    width: 99vw;
-    min-height: 700px;
-    background: rgb(240, 240, 99) url(imagens/background001.jpg) center center no-repeat;
+section p{
+    padding: 15px;
+}
+
+.imagem{ 
     background-size: cover;
-    background-attachment: fixed ; 
-    position: relative;  
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.308);
 }
 
-#segundo > p {
-    position: absolute;
+
+
+.imagem > p {
     color: white;
-    background-color: rgba(0, 0, 0, 0.356);
-    max-width: 500px ;
-    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.568) ;
     text-shadow: 3px 3px 2px black;
-    top: 50%;
-    transform: translate(0, -50%);
+}
+
+#segundo {  
+    background: rgb(240, 240, 99) url(imagens/background001.jpg) center center no-repeat fixed;
 }
 
 #quinto {
-    width: 99vw;
-    min-height: 700px;
-    background: rgb(240, 240, 99) url(imagens/background002.jpg) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed ; 
-    position: relative;  
+    background: rgb(240, 240, 99) url(imagens/background002.jpg) center center no-repeat fixed ;
     box-shadow: 0 -5px -5px rgba(0, 0, 0, 0.473);
-}
-
-#quinto> p {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.356);
-    max-width: 500px ;
-    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
-    text-shadow: 3px 3px 2px black;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 footer{
