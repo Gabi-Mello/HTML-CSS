@@ -11,9 +11,15 @@
 }
 
 *{ 
-    margin: 0;
-
+    margin: 0px;
+    padding: 0px;
 }
+
+html, body{
+    min-height: 100vh;
+    background-color: white;
+}
+
 header{
     padding-top: 50px;
     background-color: black;
@@ -22,34 +28,41 @@ header{
     text-align: center;
 }
 
+header h1{
+    font-variant: small-caps;
+}
 
 header p{
     font:  00.5em arial;
+    padding-bottom: 30px;
 }
 
-header a{
-   text-decoration: none;
+a{
+    text-decoration: none;
     color: white;
     font-weight: bolder;
 }
 
-header a:hover{
+a:hover{
     color: blue;
 }
+
 main{
     max-width: 600px;
     font: normal bold 2em var(--font-body);
     color: black; 
 }
-p {
-    padding: 20px;
-    margin: 20px;
+
+section{
+    padding: 15vh;
+    margin-top: 20px;
+    line-height: 2em;
 }
 
 #segundo {
     width: 99vw;
     min-height: 700px;
-    background: rgb(240, 240, 99) url(imagens/background001.jpg) center no-repeat;
+    background: rgb(240, 240, 99) url(imagens/background001.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed ; 
     position: relative;  
@@ -59,18 +72,17 @@ p {
     position: absolute;
     color: white;
     background-color: rgba(0, 0, 0, 0.356);
-    max-width: 450px ;
+    max-width: 500px ;
     box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
     text-shadow: 3px 3px 2px black;
     top: 50%;
     transform: translate(0, -50%);
-   
 }
 
 #quinto {
     width: 99vw;
     min-height: 700px;
-    background: rgb(240, 240, 99) url(imagens/background002.jpg) center no-repeat;
+    background: rgb(240, 240, 99) url(imagens/background002.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed ; 
     position: relative;  
@@ -81,11 +93,17 @@ p {
     position: absolute;
     color: white;
     background-color: rgba(0, 0, 0, 0.356);
-    max-width: 450px ;
+    max-width: 500px ;
     box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.582) ;
     text-shadow: 3px 3px 2px black;
     top: 50%;
     transform: translate(0, -50%);
+}
 
-
+footer{
+    background-color: black;
+    color: white;
+    font: 0.9em arial;   
+    text-align: center;
+    height: 3vh;
 }
