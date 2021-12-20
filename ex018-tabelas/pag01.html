@@ -13,7 +13,7 @@
             border-collapse: collapse;
         }
 
-        td{
+        td, th{
             border: 1px solid black;
             padding: 10px;
         }
@@ -22,41 +22,42 @@
             background-color: lightgrey;
         }
         
-        .rank{
-            font-weight: bolder;
-        }
-
-        .estado{
-            background-color: lightcoral;
-        }
-
+        
         .population{
+            text-align: end;
+            width: 130;
+        }
+
+        .percent{
+            width: 100px;
             text-align: end;
         }
 
-        .comparative-country{
-            background-color: lightgoldenrodyellow;
-        }
-        
-        .percent{
-            background-color: lightskyblue;
-        
+        tbody > tr:nth-child(odd){
+            background-color: rgba(135, 206, 250, 0.527);
         }
 
+        tbody > tr:nth-child(even){
+            background-color: rgba(195, 229, 250, 0.521);
+        }
+
+        tfoot{
+            background-color: rgb(138, 138, 138);
+        }
 
     </style>
 </head>
 <body>
     <h1>Tabelas Grandes</h1> 
-   <table>
-        
+     <table>
+       <caption> População por estado </caption>
        <thead>
            <tr>
-               <td>Rank</td>
-               	<td>State </td>
-                <td>Population</td> 
-                <td> Population Equal to</td>
-                <td>Population Percent </td>
+               <th scope="col">Rank</th>
+               	<th scope="col">State </th>
+                <th scope="col">Population</th> 
+                <th scope="col"> Population Equal to</th>
+                <th scope="col">Population Percent </th>
             </tr>
         </thead>
        <tbody>
@@ -250,13 +251,13 @@
                 <td class="percent">0.3%</td>
             </tr>
        </tbody>
-        <tfoot?>
+        <tfoot>
             <tr>
-                <td>Total</td>
-                <td>Brazil </td>	
-                <td>211,755,692</td>	 
+                <th> 28</th>
+                <th scope="row">Total </th>	
+                <td class="population">211,755,692</td>	 
                 <td>Brazil</td>	
-                <td>100.0%</td>
+                <td class="percent">100.0%</td>
             </tr>
         </tfoot>
       
